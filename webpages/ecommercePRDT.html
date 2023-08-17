@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minimalist E-Commerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 0.1px;
+        }
+        .container { /*container is used to group conntent together */
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px; /*padding is the spacing distance btw pic & borders*/
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Specifies how many categories across the web page*/
+            gap: 20px; /*the gap btw each grid or category*/
+        }
+        .category {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .category img {
+            max-width: 100%;
+            height: auto;
+        }
+        .category h2 {
+            margin: 10px 0;
+        }
+        .category-button {
+            display: block;
+            margin: 10px auto;
+            padding: 8px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .header-image { /*image tht spans across home page*/
+            width: 100%;
+            height: auto;
+        }
+        .center-image{
+            display: block;
+            margin: 0 auto;
+        }
+        .indented {
+        padding-left: 20px; /* Adjust the value as needed */ /*TO INDENT to the right*/
+        }
+        
+        /*additional information section at the bottom of the webpage*/
+        .additional-info {
+            background-color: #f2f2f2; /* Choose your desired background color */
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); /* Create two equal columns */
+            gap: 10px; /* Add gap between columns */
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h4>Get 10% off your first purchase with Lucid Thrifts now with code 'LT10OFF'</h4>
+    </header>
+        <img src="../../logo.jpg" alt="Centered Image" class="center-image" width="200" height="60">
+
+
+    <img src="../../images/home.jpg" alt="Header Image" class="header-image"> <!-- reference to class defined above -->
+
+    <h2><p class="indented" style="color:slategrey"> Shop by Category </p></h2>
+
+    <div class="container">
+        <div class="category-grid">
+            <div class="category">
+                <a href="ecommerceSweaters.html"> <!-- Option 1: Imagewith hyperlink-->
+                    <img src="../../images/sweaters.png" alt="Category 1">
+                </a>
+                <h2>Sweaters</h2>
+
+                <!-- Option 2: Image with Button -->
+                <!-- <img src="images/sweaters.png" alt="Category 1"> 
+                <h2>Sweaters</h2>
+                <a href="category1-page.html" class="category-button">Shop Now</a> -->
+            </div>
+            <div class="category">
+                <a href="ecommerceShirts.html">
+                    <img src="../../images/tshirts.png" alt="category 2">
+                </a>
+                <h2>Shirts</h2>
+            </div>
+            <div class="category">
+                <a href="ecommerceSinglets.html">
+                    <img src="../../images/singlet.png" alt="category 3">
+                </a>
+                <h2>Singlets</h2>
+            </div>
+            <!-- Add more categories here -->
+            </div> 
+        </div>
+    </div>
+
+    <div class="additional-info">
+        <div>
+            <h2>About us</h2>
+            <p>Who We Are</p>
+            <p>Join #TeamLucidThrifts</p>
+        </div>
+
+        <div>
+            <h2>Contact us</h2>
+            Email: lucidthrifts@gmail.com <br/><br/>
+            WhatsApp: 6211 3455
+        </div>
+
+    </div>
+
+</body>
+</html>

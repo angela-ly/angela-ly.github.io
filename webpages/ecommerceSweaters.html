@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Main Menu Example</title> <!-- Just labelling the doc purpose-->
+    <style>
+        /* Styling text of webpage & Header of webpage (include a text as you like) */
+        body { 
+                font-family:Arial, Helvetica, sans-serif; 
+                margin: 0;
+                padding: 0;
+        }
+        header { 
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 1px;
+        }
+
+        /* Styling Logo to have a circular frame*/
+        .logo-container { 
+            display: inline-block;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px; 
+            /* Space between logo and text */
+        }
+        .logo {
+            max-height: 70px; 
+            /* Adj height*/
+            display: block;
+        }
+
+
+        /* Main Menu Styling*/
+        .main-menu { 
+            background-color: #333;
+            color: white;
+            text-align:center;
+            padding: 6px;
+        }
+        .main-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .main-menu li {
+            display:inline-block;
+            margin: 0 10px;
+        }
+        .main-menu a{
+            text-decoration: none;
+            color:white;
+        }
+        /* INCLUDING cart icon on main menu */
+        .cart-icon {
+            margin-left: auto;
+            font-size: 1.5 rem;
+        }
+        /* Product Display Styling*/
+        /* Container (group the image, add to cart button, product border etc.)*/
+        .container { 
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Distribute into 4 equal columns */
+            gap: 20px;
+        }
+        .additional-info {
+            background-color: #f2f2f2; /* Choose your desired background color */
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); /* Create two equal columns */
+            gap: 10px; /* Add gap between columns */
+            
+        }
+        </style>
+        <!-- INCLUDING cart icon on main menu PART2: Retrieve icon from here -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<!-- 1. Placing Lucid Thrifts Logo within Header-->
+<header>
+    <h1>
+        <div class="logo-container">
+            <img src="../../logo.jpg" alt="Logo" class="logo">
+        </div>
+    </h1>
+</header>
+<!-- 2. Create Main Menu -->
+<body>
+    <div class="main-menu">
+        <ul>
+            <li><a href="ecommercePRDT.html">Home</a></li>
+            <li><a href="ecommerceSweaters.html">Sweaters</a></li>
+            <li><a href="ecommerceShirts.html">Shirts</a></li>
+            <li><a href="ecommerceSinglets.html">Singlets</a></li>
+            <!-- PART 3: ADD ICON & Hyperlink -->
+            <li><a href="ecommerceCart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+    </div>
+
+<!-- 3. Display products  -->
+    <div class="container">
+        <div class="product-grid">
+            <div class="product">
+                    <img src="../../images/sweaters.png" alt="Product 1"> <br/><br/>
+                    <b>G Lions Purple </b> <br/>
+                    <b>Sweater</b><br/><br/><br/>
+                    28" x 27.5" Size 2XL </br>
+                    $30 <br/>
+                    <a href="ecommerceCart.html">
+                        <button>Add to Cart</button>
+                    </a>    
+            </div>
+            <div class="product">
+                <img src="../../images/sweaters1.png" alt="Product 2"><br/><br/>
+                <b>Michigan States University (MSU)</b><br/><br/><br/>
+                18.5" x 24" Size M <br/>
+                $20 <br/>
+                <a href="ecommerceCart.html">
+                    <button>Add to Cart</button>
+                </a>
+            </a>
+            </div>
+            <div class="product">
+                    <img src="../../images/sweaters2.png" alt="Product 3"><br/><br/>
+                    <b>Sugar Bowl Louisville 2013 American Football Red Sweater</b><br/><br/>
+                    20" x 23" Size S <br/>
+                    $25<br/>
+                    <a href="ecommerceCart.html">
+                        <button>Add to Cart</button>
+                    </a>
+            </div>
+            <div class="product">
+                    <img src="../../images/sweaters3.png" alt="Product 4"><br/><br/>
+                    <b>Lee Sport Browns American Football Brown Sweater (bleach stain)</b><br/><br/>
+                    19" x 23" Kids Size L<br/>
+                    $25<br/>
+                    <a href="ecommerceCart.html">
+                        <button>Add to Cart</button>
+                    </a>
+            </div>
+            <!-- Add more products here -->
+            <div class="product">
+                <img src="../../images/sweaters4.png" alt="Product 5"><br/><br/>
+                <b>GMAC Bowl 2004 American football Grey Sweater</b><br/><br/>
+                23" x 23.5" Size M<br/>
+                $25<br/>
+                <a href="ecommerceCart.html">
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+
+            <div class="product">
+                <img src="../../images/sweaters5.png" alt="Product 6"><br/><br/>
+                <b>Lee Springton Lake Spartans Grey Sweater</b><br/><br/>
+                20" x 25.5" Size M<br/>
+                $25<br/>
+                 <a href="ecommerceCart.html">
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+
+            <div class="product">
+                <img src="../../images/sweaters7.png" alt="Product 7"><br/><br/>
+                <b>Blue Devils MStm 2003 American Football State Playoffs Grey Sweater</b><br/><br/>
+                23" x 28" Size L<br/>
+                $25<br/>
+                <a href="ecommerceCart.html">
+                    <button>Add to Cart</button>
+                </a><br/>
+            </div>
+
+            <div class="product">
+                <img src="../../images/sweaters6.png" alt="Product 8"><br/><br/>
+                <b>Versailles 2002 American Football State Champs DIV.IV Grey Sweater</b><br/><br/>
+                23.5" x 27.5" Size L<br/>
+                $20<br/>
+                <a href="ecommerceCart.html">
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="additional-info">
+        <div>
+            <h2>About us</h2>
+            <p>Who We Are</p>
+            <p>Join #TeamLucidThrifts</p>
+        </div>
+
+        <div>
+            <h2>Contact us</h2>
+            Email: lucidthrifts@gmail.com <br/><br/>
+            WhatsApp: 6211 3455
+        </div>
+
+    </div>
+</body>
+</html>
