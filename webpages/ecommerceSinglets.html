@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Main Menu Example</title> <!-- Just labelling the doc purpose-->
+    <style>
+        /* Styling text of webpage & Header of webpage (include a text as you like) */
+        body { 
+                font-family:Arial, Helvetica, sans-serif; 
+                margin: 0;
+                padding: 0;
+        }
+        header { 
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 1px;
+        }
+
+        /* Styling Logo to have a circular frame*/
+        .logo-container { 
+            display: inline-block;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px; 
+            /* Space between logo and text */
+        }
+        .logo {
+            max-height: 70px; 
+            /* Adj height*/
+            display: block;
+        }
+
+
+        /* Main Menu Styling*/
+        .main-menu { 
+            background-color: #333;
+            color: white;
+            text-align:center;
+            padding: 6px;
+        }
+        .main-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .main-menu li {
+            display:inline-block;
+            margin: 0 10px;
+        }
+        .main-menu a{
+            text-decoration: none;
+            color:white;
+        }
+        .cart-icon {
+            margin-left: auto;
+            font-size: 1.5 rem;
+        }
+
+        /* Product Display Styling*/
+        /* Container (group the image, add to cart button, product border etc.)*/
+        .container { 
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 20%;
+            height: auto;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* Distribute into 4 equal columns */
+            gap: 20px;
+        }
+        .additional-info {
+            background-color: #f2f2f2; /* Choose your desired background color */
+            padding: 20px;
+            margin-top: 160px; /* Add some space between products and additional info */
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); /* Create two equal columns */
+            gap: 10px; /* Add gap between columns */
+            
+        }
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<!-- 1. Placing Lucid Thrifts Logo within Header-->
+<header>
+    <h1>
+        <div class="logo-container">
+            <img src="../../logo.jpg" alt="Logo" class="logo">
+        </div>
+    </h1>
+</header>
+<!-- 2. Create Main Menu -->
+<body>
+    <div class="main-menu">
+        <ul>
+            <li><a href="../store.html">Home</a></li>
+            <li><a href="ecommerceSweaters.html">Sweaters</a></li>
+            <li><a href="ecommerceShirts.html">Shirts</a></li>
+            <li><a href="ecommerceSinglets.html">Singlets</a></li>
+            <li><a href="ecommerceCart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+    </div>
+
+<!-- 3. Display products  -->
+    <div class="container">
+        <div class="product-grid">
+            <div class="product">
+                    <img src="../../images/singlet.png" alt="Product 1"> <br/><br/>
+                    <b>Harley Davidson Las Vegas Nevada</b> <br/>
+                    <b>Black Sleeveless shirt</b><br/><br/>
+                    21.5" x 27" Size L </br>
+                    $38 <br/>
+                    <a href="ecommerceCart.html">
+                        <button>Add to Cart</button>
+                    </a> 
+            </div>
+
+        </div>
+    </div>
+    <div class="additional-info">
+        <div>
+            <h2>About us</h2>
+            <p>Who We Are</p>
+            <p>Join #TeamLucidThrifts</p>
+        </div>
+
+        <div>
+            <h2>Contact us</h2>
+            Email: lucidthrifts@gmail.com <br/><br/>
+            WhatsApp: 6211 3455
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Main Menu Example</title> <!-- Just labelling the doc purpose-->
+    <style>
+        /* Styling text of webpage & Header of webpage (include a text as you like) */
+        body { 
+                font-family:Arial, Helvetica, sans-serif; 
+                margin: 0;
+                padding: 0;
+        }
+        header { 
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 1px;
+        }
+
+        /* Styling Logo to have a circular frame*/
+        .logo-container { 
+            display: inline-block;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px; 
+            /* Space between logo and text */
+        }
+        .logo {
+            max-height: 70px; 
+            /* Adj height*/
+            display: block;
+        }
+
+
+        /* Main Menu Styling*/
+        .main-menu { 
+            background-color: #333;
+            color: white;
+            text-align:center;
+            padding: 6px;
+        }
+        .main-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .main-menu li {
+            display:inline-block;
+            margin: 0 10px;
+        }
+        .main-menu a{
+            text-decoration: none;
+            color:white;
+        }
+        /* INCLUDING cart icon on main menu */
+        .cart-icon {
+            margin-left: auto;
+            font-size: 1.5 rem;
+        }
+
+        /*3. Your shopping bag */
+        .additional-info {
+            background-color: #f2f2f2; /* Choose your desired background color */
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* Create two equal columns */
+            gap: 20px; /* Add gap between columns */
+        }
+    </style>
+</head>
+
+<!-- 1. Placing Lucid Thrifts Logo within Header-->
+<header>
+    <h1>
+        <div class="logo-container">
+            <img src="../../logo.jpg" alt="Logo" class="logo">
+        </div>
+    </h1>
+</header>
+<!-- 2. Create Main Menu -->
+<body>
+    <div class="main-menu">
+        <ul>
+            <li><a href="../store.html">Home</a></li>
+            <li><a href="ecommerceSweaters.html">Sweaters</a></li>
+            <li><a href="ecommerceShirts.html">Shirts</a></li>
+            <li><a href="ecommerceSinglets.html">Singlets</a></li>
+            <!-- PART 3: ADD ICON & Hyperlink -->
+            <li><a href="ecommerceCart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="additional-info">
+        <div>
+            <h2>My Shopping Bag</h2>
+        </div>
+
+    </div>
+
+</body>
+</html>  
